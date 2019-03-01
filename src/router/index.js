@@ -10,12 +10,12 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: () => import(/* webpackChunkName: "home" */ '../views/home.vue')
+      component: () => import(/* webpackChunkName: "home" */ '../demo/home.vue')
     },
     {
       path: '/xt-ps-table',
       name: 'xt-ps-table',
-      component: () => import(/* webpackChunkName: "table" */ '../views/table.vue')
+      component: () => import(/* webpackChunkName: "table" */ '../demo/table.vue')
     }
   ]
 });
