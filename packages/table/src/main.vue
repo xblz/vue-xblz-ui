@@ -1,12 +1,12 @@
 <template>
   <table
-    class="xblz-table"
+    class="xt-ps-table"
     :style="{
       'border-color': tableLineColor
     }"
     rules="all"
     frame="box"
-    ref="xblz-table"
+    ref="xt-ps-table"
   >
     <tbody>
       <tr v-for="(rowData, rowIndex) in tableData" :key="rowIndex">
@@ -41,7 +41,7 @@
 
 <script type="text/babel">
 export default {
-  name: 'xblz-table',
+  name: 'xt-ps-table',
   props: {
     // 展示数据
     data: { type: Array, default: () => [] },
@@ -94,7 +94,7 @@ export default {
           return Number(this.labelWidth.replace('px', ''));
         } else {
           return (
-            (this.$refs['xblz-table'].offsetWidth / this.colCount / 100) * Number(this.labelWidth.replace('%', ''))
+            (this.$refs['xt-ps-table'].offsetWidth / this.colCount / 100) * Number(this.labelWidth.replace('%', ''))
           );
         }
       }
@@ -103,7 +103,7 @@ export default {
       if (!this.isMounted) {
         return 0;
       } else {
-        return this.$refs['xblz-table'].offsetWidth / this.colCount - this.tableLabelWidth;
+        return this.$refs['xt-ps-table'].offsetWidth / this.colCount - this.tableLabelWidth;
       }
     }
   },
@@ -120,7 +120,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.xblz-table {
+.xt-ps-table {
   width: 100%;
 
   tr {

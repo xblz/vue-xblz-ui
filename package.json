@@ -1,5 +1,5 @@
 {
-  "name": "vue-xblz-ui",
+  "name": "xt-ps-ui",
   "version": "1.1.1",
   "description": "A Component Library for Vue.js.",
   "private": false,
@@ -15,7 +15,7 @@
   },
   "keywords": [
     "vue",
-    "xblz",
+    "xt",
     "component"
   ],
   "files": [
