@@ -1,0 +1,62 @@
+{
+  "name": "vue-xblz-ui",
+  "version": "1.1.1",
+  "description": "A Component Library for Vue.js.",
+  "private": false,
+  "main": "index.js",
+  "author": {
+    "name": "sx",
+    "email": "sx@xblz.org",
+    "url": "http://xblz.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:xblz/vue-xblz-ui.git"
+  },
+  "keywords": [
+    "vue",
+    "xblz",
+    "component"
+  ],
+  "files": [
+    "packages",
+    "index.js"
+  ],
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "peerDependencies": {
+    "vue": "^2.6.6"
+  },
+  "devDependencies": {
+    "vue": "^2.6.6",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1",
+    "@vue/cli-plugin-babel": "^3.4.1",
+    "@vue/cli-plugin-eslint": "^3.4.1",
+    "@vue/cli-service": "^3.4.1",
+    "@vue/eslint-config-prettier": "^4.0.1",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "lint-staged": "^8.1.0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "vue-cli-service lint",
+      "git add"
+    ],
+    "*.vue": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
+}
