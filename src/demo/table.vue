@@ -1,5 +1,5 @@
 <template>
-  <xblz-table :data="data" :colNumber="colNumber"></xblz-table>
+  <xt-ps-table :data="data" :colNumber="colNumber"></xt-ps-table>
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
   <div class="home">
-    vue-xblz-ui
+    xt-ps-ui
   </div>
 </template>

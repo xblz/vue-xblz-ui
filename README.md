@@ -31,25 +31,25 @@
 ### Install
 
 ```shell
-npm install vue-xblz-ui -S
+npm install xt-ps-ui -S
 ```
 
 ### 快速集成
 
 ```javascript
 import Vue from 'vue';
-import XblzComponents from 'vue-xblz-ui';
+import XtComponents from 'xt-ps-ui';
 
-Vue.use(XblzComponents);
+Vue.use(XtComponents);
 
 // or
-import { Table } from 'vue-xblz-ui';
+import { Table } from 'xt-ps-ui';
 
 Vue.component(Table.name, Table);
 ```
 
 ```vue
-<xblz-table
+<xt-ps-table
   :data="[{ label: '姓名', value: '张三' }]"
   :colCount="4"
   tableLineColor="#dfdfdf"
@@ -62,7 +62,7 @@ Vue.component(Table.name, Table);
   contentFontColor="#000000"
   contentBgColor="#ffffff"
   contentAlign="left"
-></xblz-table>
+></xt-ps-table>
 ```
 
 ### 参数说明

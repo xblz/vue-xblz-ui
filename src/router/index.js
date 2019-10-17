@@ -13,8 +13,8 @@ export default new Router({
       component: () => import(/* webpackChunkName: "home" */ '../demo/home.vue')
     },
     {
-      path: '/xblz-table',
-      name: 'xblz-table',
+      path: '/xt-ps-table',
+      name: 'xt-ps-table',
       component: () => import(/* webpackChunkName: "table" */ '../demo/table.vue')
     }
   ]
